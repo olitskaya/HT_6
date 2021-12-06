@@ -26,9 +26,9 @@ import time
 def lights_test(a):
     while True:
         for elem in a:
-            print(f'{elem[0].title()}{elem[1].title():>15}')
+            print(f'{elem[0].title()}{elem[1].title()}')
             time.sleep(1)
     return elem
     
-lights = [('red', 'green'), ('red', 'green'), ('red', 'green'), ('red', 'green'), ('yellow', 'green'), ('yellow', 'green'), ('green', 'red'), ('green', 'red'), ('green', 'red'), ('green', 'red'), ('green', 'red'), ('yellow', 'red'), ('yellow', 'red')]
+lights = [('red', '      green'), ('red', '      green'), ('red', '      green'), ('red', '      green'), ('yellow', '   green'), ('yellow', '   green'), ('green', '    red'), ('green', '    red'), ('green', '    red'), ('green', '    red'), ('green', '    red'), ('yellow', '   red'), ('yellow', '   red')]
 lights_test(lights)
